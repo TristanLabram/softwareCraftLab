@@ -12,6 +12,8 @@ namespace QABank
         static void Main(string[] args)
         {
             BankAccount firstAccount = new BankAccount("Tristan", 5.43);
+            Console.WriteLine(firstAccount.AccountName);
+      Console.ReadLine();
             BankAccount secondAccount = new BankAccount("Another Name", 100.58, 5);
         }
     }

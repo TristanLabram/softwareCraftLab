@@ -18,7 +18,7 @@ namespace QACalculator
             String[] numbers = n1.Split(separator);
             foreach (String number in numbers)
             {
-                if (!Utils.IsNumeric(number))
+                if (!number.All(char.IsNumber))
                 {
                     return result;
                 }
@@ -33,7 +33,7 @@ namespace QACalculator
             String[] numbers = n1.Split(',');
             foreach (String number in numbers)
             {
-                if (!Utils.IsNumeric(number))
+                if (!number.All(char.IsNumber))
                 {  // check number is valid
                     return result;
                 }
@@ -49,7 +49,7 @@ namespace QACalculator
             String[] numbers = n1.Split(',');
             foreach (String number in numbers)
             {
-                if (!Utils.IsNumeric(number))
+                if (!number.All(char.IsNumber))
                 {  // check number is valid
                     return result;
                 }
